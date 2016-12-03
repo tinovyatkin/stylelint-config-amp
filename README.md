@@ -36,8 +36,8 @@ If you've globally installed `stylelint-config-amp` using the `-g` flag, then yo
 
 ### Limitations
 
-styleling at the moment have to rules to check allowed declarations within `@keyframes` and I planing to submit pull request for such rule.
-We also don't check for maximum CSS size, nor for pseudo selectors used without tag names (it's prohibited at AMP) - I'm planing to submit such rules pull request to styleling however.
+`stylelint` at the moment has no rules to check allowed declarations within `@keyframes` and I'm planing to submit pull request for such rule(s).
+We also don't check for maximum CSS size, nor for pseudo selectors used without tag names (it's prohibited at AMP) - I'm planing to submit such rules pull request to `stylelint` too.
 
 
 ## [Changelog](CHANGELOG.md)
