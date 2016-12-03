@@ -15,7 +15,8 @@
     "stylelint-config",
     "amp",
     "mobile",
-    "accelerated-mobile-pages"
+    "accelerated-mobile-pages",
+    "validator"
   ],
   "author": "tinovyatkin",
   "license": "MIT",
@@ -27,20 +28,13 @@
     "stylelint": "^7.6.0"
   },
   "scripts": {
-    "ava": "ava --verbose \"__tests__/**/*.ava.js\"",
-    "lint:js": "eslint . --ignore-path .gitignore",
-    "lint:md": "remark . --quiet --frail",
-    "lint": "npm-run-all --parallel lint:*",
-    "pretest": "npm run lint",
     "release": "npmpub",
-    "test": "npm run ava"
+    "test": "jest && eslint *.js --ignore-path .gitignore && remark . --quiet --frail"
   },
   "devDependencies": {
-    "ava": "^0.17.0",
-    "babel-preset-env": "0.0.9",
     "eslint": "^3.1.1",
     "eslint-config-stylelint": "^5.0.0",
-    "npm-run-all": "^3.0.0",
+    "jest": "^17.0.3",
     "npmpub": "^3.0.1",
     "remark-cli": "^2.0.0",
     "remark-preset-lint-consistent": "^1.0.0",
@@ -50,24 +44,15 @@
   "eslintConfig": {
     "extends": [
       "stylelint"
-    ]
+    ],
+    "env": {
+      "jest": true
+    }
   },
   "remarkConfig": {
     "presets": [
       "lint-recommended",
       "lint-consistent"
-    ]
-  },
-  "babel": {
-    "presets": [
-      [
-        "env",
-        {
-          "targets": {
-            "node": "current"
-          }
-        }
-      ]
     ]
   }
 }
