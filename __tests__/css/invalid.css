@@ -17,3 +17,11 @@ a * {
     opacity: 1;
   }
 }
+
+i-amp-test {
+  color: red;
+}
+
+a .-amp-test {
+  color: black;
+}
