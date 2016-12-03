@@ -1,6 +1,6 @@
 # stylelint-config-amp
 
-[![NPM version](http://img.shields.io/npm/v/stylelint-config-amp.svg)](https://www.npmjs.org/package/stylelint-config-amp) [![Build Status](https://travis-ci.org/tinovyatkin/stylelint-config-amp.svg?branch=master)](https://travis-ci.org/stylelint/stylelint-config-amp) [![Build status](https://ci.appveyor.com/api/projects/status/o8rfhyax6n7bjnlt/branch/master?svg=true)](https://ci.appveyor.com/project/stylelint/stylelint-config-standard/branch/master)
+[![NPM version](http://img.shields.io/npm/v/stylelint-config-amp.svg)](https://www.npmjs.org/package/stylelint-config-amp) [![Build Status](https://travis-ci.org/tinovyatkin/stylelint-config-amp.svg?branch=master)](https://travis-ci.org/tinovyatkin/stylelint-config-amp)
 
 > The stylelint config to enforce CSS requirements of Accelerated Mobile Pages ![amp-logo](https://www.ampproject.org/static/img/logo-blue.svg).
 
