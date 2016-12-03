@@ -25,3 +25,8 @@ i-amp-test {
 a .-amp-test {
   color: black;
 }
+
+.main .content {
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
