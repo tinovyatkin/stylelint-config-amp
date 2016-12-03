@@ -37,6 +37,7 @@
   },
   "devDependencies": {
     "ava": "^0.17.0",
+    "babel-preset-env": "0.0.9",
     "eslint": "^3.1.1",
     "eslint-config-stylelint": "^5.0.0",
     "npm-run-all": "^3.0.0",
@@ -55,6 +56,18 @@
     "presets": [
       "lint-recommended",
       "lint-consistent"
+    ]
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
     ]
   }
 }
