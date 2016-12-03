@@ -1,0 +1,19 @@
+a * {
+  top: .2em;
+}
+
+@media only screen and (min-width: 1025px) {
+  .desaturate {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: .7;
+    -webkit-transition: all .4s ease-out;
+    transition: all .4s ease-out;
+  }
+
+  .desaturate:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    opacity: 1;
+  }
+}
