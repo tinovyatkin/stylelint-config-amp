@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-amp",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "stylelint config to enforce Accelerated Mobile Pages CSS restrictions",
   "main": "index.js",
   "files": [
