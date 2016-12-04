@@ -4,9 +4,11 @@
 
 > The stylelint config to enforce CSS requirements of Accelerated Mobile Pages ![amp-logo](https://www.ampproject.org/static/img/logo-blue.svg).
 
-This is stylelint config you may use either in authoring CSS for Accelerated Mobile Pages or for lint against requirements from [Supported CSS for AMP](https://www.ampproject.org/docs/guides/responsive/style_pages)
+This is stylelint config you may use either in authoring CSS for Accelerated Mobile Pages or for lint against requirements from [Supported CSS for AMP](https://www.ampproject.org/docs/guides/responsive/style_pages).
+All allowed CSS code on that page must be inlined at single `<style amp-custom>` tag at a document `<head>`,
+so, you may use this config either from building tools during linting before inlining the CSS task or if your IDE support `stylelint` linting for inline rules.  
 
-Enforces all requirements that can be enforce using current stylelint rules, including tag and classes names blacklist.
+Enforces all requirements that can be checked using current `stylelint` rules, including tag and classes names blacklist.
 
 _Note: the config is tested against AMP project homepage CSS that at the moment appears to violate it's own rules._
 
@@ -33,6 +35,36 @@ If you've globally installed `stylelint-config-amp` using the `-g` flag, then yo
   "extends": "/absolute/path/to/stylelint-config-amp"
 }
 ```
+Lint from a build script:
+
+```javascript
+const config = require("stylelint-config-amp")
+const { readFileSync } = require("fs")
+const stylelint = require("stylelint")
+
+function lint(filename, warningsCount) {
+  return stylelint.lint({
+    code: readFileSync(filename), "utf8"),
+    config,
+  })
+  .then(result => {
+    const { results:  [{ warnings }] } = result
+    expect(warnings.length).toBe(warningsCount)
+  })
+}
+```
+
+Lint task for `npm` / `yarn` package.json:
+
+```json
+"scripts": {
+  "lint:amp-css": "stylelint --config=stylelint-config-amp src/stylesheets/amp/*.css"
+},
+"devDependencies": {
+  "stylelint": "^7.6.0",
+  "stylelint-config-amp": "^0.3.0"
+}
+  ```
 
 ### Limitations
 
