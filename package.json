@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/tinovyatkin/stylelint-config-amp#readme",
   "peerDependencies": {
-    "stylelint": "^7.6.0"
+    "stylelint": "^7.9.0"
   },
   "scripts": {
     "release": "npmpub",
