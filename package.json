@@ -44,7 +44,7 @@
     "remark-cli": "^3.0.0",
     "remark-preset-lint-consistent": "^2.0.0",
     "remark-preset-lint-recommended": "^2.0.0",
-    "stylelint": "^7.6.0"
+    "stylelint": "^7.13.0"
   },
   "eslintConfig": {
     "extends": [
