@@ -3,6 +3,9 @@
   "version": "0.4.0",
   "description": "stylelint config to enforce Accelerated Mobile Pages CSS restrictions",
   "main": "index.js",
+  "engines": {
+    "node": ">=6"
+  },
   "files": [
     "index.js"
   ],
@@ -38,10 +41,10 @@
   },
   "devDependencies": {
     "eslint": "^4.1.0",
-    "jest": "^20.0.0",
-    "eslint-config-stylelint": "^7.0.0",
+    "eslint-config-stylelint": "^8.1.0",
+    "jest": "^22.2.1",
     "npmpub": "^3.1.0",
-    "remark-cli": "^4.0.0",
+    "remark-cli": "^5.0.0",
     "remark-preset-lint-consistent": "^2.0.0",
     "remark-preset-lint-recommended": "^3.0.0",
     "stylelint": "^8.0.0"
