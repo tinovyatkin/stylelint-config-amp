@@ -1,7 +1,9 @@
-const config = require("./")
-const { join } = require("path")
-const { readFileSync } = require("fs")
-const stylelint = require("stylelint")
+'use strict';
+
+const config = require("./");
+const stylelint = require("stylelint");
+const { join } = require("path");
+const { readFileSync } = require("fs");
 
 function lint(filename, warningsCount) {
   return stylelint.lint({
