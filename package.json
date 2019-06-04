@@ -40,7 +40,7 @@
   },
   "devDependencies": {
     "eslint": "5.16.0",
-    "eslint-config-stylelint": "8.3.0",
+    "eslint-config-stylelint": "11.0.0",
     "jest": "22.2.1",
     "stylelint": "10.0.1"
   },
