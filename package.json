@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/tinovyatkin/stylelint-config-amp#readme",
   "peerDependencies": {
-    "stylelint": "^8.4.0"
+    "stylelint": "^8.4.0 || ^10.0.0"
   },
   "scripts": {
     "release": "npmpub",
@@ -47,7 +47,7 @@
     "remark-cli": "5.0.0",
     "remark-preset-lint-consistent": "2.0.1",
     "remark-preset-lint-recommended": "3.0.1",
-    "stylelint": "8.4.0"
+    "stylelint": "10.0.1"
   },
   "eslintConfig": {
     "extends": [
