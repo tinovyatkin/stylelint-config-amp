@@ -12,7 +12,7 @@ function lint(filename, warningsCount) {
   })
   .then(result => {
     const { results:  [{ warnings }] } = result
-    expect(warnings.length).toBe(warningsCount)
+    expect(warnings).toHaveLength(warningsCount)
   })
 }
 
