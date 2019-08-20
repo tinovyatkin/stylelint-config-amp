@@ -33,28 +33,39 @@
   },
   "homepage": "https://github.com/tinovyatkin/stylelint-config-amp#readme",
   "peerDependencies": {
-    "stylelint": "^8.4.0 || ^10.0.0"
+    "stylelint": "^10.0.0"
   },
   "scripts": {
+    "lint": "eslint *.js --ignore-path .gitignore",
     "test": "jest && eslint *.js --ignore-path .gitignore"
   },
   "devDependencies": {
     "@types/jest": "24.0.18",
     "eslint": "6.2.1",
-    "eslint-config-stylelint": "11.1.0",
+    "eslint-config-prettier": "6.1.0",
+    "eslint-plugin-node": "9.1.0",
+    "eslint-plugin-prettier": "3.1.0",
     "jest": "24.9.0",
+    "prettier": "1.18.2",
     "stylelint": "10.1.0"
   },
   "eslintConfig": {
-    "extends": [
-      "stylelint"
+    "plugins": [
+      "prettier",
+      "node"
     ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:prettier/recommended",
+      "plugin:node/recommended"
+    ],
+    "env": {
+      "jest": true,
+      "es6": true
+    },
     "parserOptions": {
       "ecmaVersion": 2018,
       "sourceType": "script"
-    },
-    "env": {
-      "jest": true
     }
   }
 }
