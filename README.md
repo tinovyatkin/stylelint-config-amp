@@ -2,9 +2,16 @@
 
 [![NPM version](http://img.shields.io/npm/v/stylelint-config-amp.svg)](https://www.npmjs.org/package/stylelint-config-amp) [![Build Status](https://travis-ci.org/tinovyatkin/stylelint-config-amp.svg?branch=master)](https://travis-ci.org/tinovyatkin/stylelint-config-amp)
 
-> The stylelint config to enforce CSS requirements of Accelerated Mobile Pages ![amp-logo](https://www.ampproject.org/static/img/logo-blue.svg).
+> The stylelint config to enforce CSS requirements of Accelerated Mobile Pages
 
-This is stylelint config you may use either in authoring CSS for Accelerated Mobile Pages or for lint against requirements from [Supported CSS for AMP](https://www.ampproject.org/docs/guides/responsive/style_pages).
+<img src="https://status.ampproject.org/static/img/logo-blue.svg" style="float: left; margin-right: 20px" />
+
+AMP CSS requirements: <https://amp.dev/documentation/guides-and-tutorials/develop/style_and_layout/style_pages/>
+
+<hr/>
+
+
+This is stylelint config you may use either in authoring CSS for Accelerated Mobile Pages or for lint against requirements from [Supported CSS for AMP](https://www.ampproject.org/docs/guides/responsive/style_pages) and [AMP HTML Specification](https://amp.dev/documentation/guides-and-tutorials/learn/spec/amphtml/?format=websites#@-rules).
 All allowed CSS code on that page must be inlined at single `<style amp-custom>` tag at a document `<head>`,
 so, you may use this config either from building tools during linting before inlining the CSS task or if your IDE support `stylelint` linting for inline rules.  
 
@@ -61,8 +68,8 @@ Lint task for `npm` / `yarn` `package.json`:
   "lint:amp-css": "stylelint --config=stylelint-config-amp src/stylesheets/amp/*.css"
 },
 "devDependencies": {
-  "stylelint": "^7.6.0",
-  "stylelint-config-amp": "^0.3.0"
+  "stylelint": "^10.0.0",
+  "stylelint-config-amp": "^2.0.0"
 }
   ```
 
