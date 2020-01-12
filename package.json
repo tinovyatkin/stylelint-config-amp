@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/tinovyatkin/stylelint-config-amp#readme",
   "peerDependencies": {
-    "stylelint": "^10.0.0 || ^11.0.0 || ^12.0.0"
+    "stylelint": "^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0"
   },
   "scripts": {
     "lint": "eslint *.js --ignore-path .gitignore",
@@ -47,7 +47,7 @@
     "eslint-plugin-prettier": "3.1.2",
     "jest": "24.9.0",
     "prettier": "1.19.1",
-    "stylelint": "12.0.1"
+    "stylelint": "13.0.0"
   },
   "eslintConfig": {
     "plugins": [
