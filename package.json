@@ -40,7 +40,7 @@
     "test": "jest && eslint *.js --ignore-path .gitignore"
   },
   "devDependencies": {
-    "@types/jest": "25.2.1",
+    "@types/jest": "26.0.23",
     "eslint": "6.8.0",
     "eslint-config-prettier": "6.11.0",
     "eslint-plugin-node": "11.1.0",
